@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="stylesheets/bootstrap.css" type="text/css">
   </head>
   <body id="page-top">
+<<<<<<< HEAD
         <%if Helpers.is_logged_in?(session) == false %>
             <a href='/'>Please Log In</a>
         <%else%>
@@ -13,6 +14,11 @@
             <h3>Your Balance: <%=@user.balance.to_f%></h3>
             <a href="/sessions/logout">Log Out</a>
         <%end%>
+=======
+        <h1>Welcome <%=@user.username%></h1>
+        <p>Balance <%=@user.balance%></p>
+        <a href="/sessions/logout">Log Out</a>
+>>>>>>> 2968bc9ac4e9d30df8e1248fdb594c5a8a441240
 
   </body>
 </html>

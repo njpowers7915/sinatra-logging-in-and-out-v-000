@@ -18,7 +18,11 @@ class ApplicationController < Sinatra::Base
           erb :error
       else
           session[:user_id] = @user.id
+<<<<<<< HEAD
           redirect '/account'
+=======
+          erb :account
+>>>>>>> 2968bc9ac4e9d30df8e1248fdb594c5a8a441240
       end
   end
 
@@ -29,7 +33,11 @@ class ApplicationController < Sinatra::Base
           erb :error
       else
           session[:user_id] = @user.id
+<<<<<<< HEAD
           erb :account
+=======
+          redirect '/account'
+>>>>>>> 2968bc9ac4e9d30df8e1248fdb594c5a8a441240
       end
   end
 
